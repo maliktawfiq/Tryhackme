@@ -194,8 +194,8 @@ uid=1002(tweedledum) gid=1002(tweedledum) groups=1002(tweedledum)
 
 ```
 >we got our shell on *tweedledum*^^ , lets upgrade the shell.
-```python3 -c "import pty;pty.spawn('/bin/bash')"
-```
+`python3 -c "import pty;pty.spawn('/bin/bash')"`
+
 > we have a file called **humptydumpty.txt** .
 
 ```
