@@ -87,7 +87,7 @@ PORT      STATE SERVICE    VERSION
 ```
 > all of the ports are Dropbear sshd , its the same of open but it's used for low memory devices like embeded system , hence we could try ssh , but we don't have any credentials yet lets try it without providing any thing .
 
-![ssh](nmap.png)
+![ssh](imgs/nmap.png)
 
 > after a long journey , I realized that when when it prints higher the right port will be lower than this port that i have tried , Finally i got it between 11700 - 11800 (on my case because every deploy to the machine the port change ^^) lets try more .. 
 ```
@@ -137,9 +137,9 @@ Enter Secret:
 
 ``` 
 > well , Finally i got my port , here there is a challenge to solve lets go to cipher Identifier
-![cipher](cipher.png)
+![cipher](imgs/cipher.png)
 > okey lets try it using "Vigenère Autokey Cipher" 
-![key](key.png)
+![key](imgs/key.png)
 > We , got our key and our secret , The secret Give us the credentials to the first user **jabberwock**
 ```
 jabberwock@looking-glass:~$ cat user.txt 
